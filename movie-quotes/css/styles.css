@@ -1,0 +1,12 @@
+body {
+  background-color: black;
+  font-family: 'Courier New', Courier, monospace;  
+}
+
+p {
+    color: white;
+}
+
+#header {
+    color: rgb(38, 244, 110);
+}
