@@ -1,0 +1,355 @@
+
+body {
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 40px;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.button_container {
+    border: 1px solid #ddd;
+    margin: 0 10px 10px 0;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    float: left;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* SPOTIFY */
+a#btn_spotify {
+    display: inline-block;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 10px 40px 0 40px;
+    background-color: #2ebd59;
+    border: 2px solid #2ebd59;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+a#btn_spotify:hover {
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+}
+
+/* AMAZON */
+a#btn_amazon {
+    display: block;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    margin: auto;
+    margin-top: 75px;
+    padding-top: 8px;
+    background-color: #232f3e;
+    color: #fff;
+    text-align: center;
+    font-size: 60px;
+    transition: all .2s;
+}
+
+a#btn_amazon:hover {
+    background-color: #fc9a18;
+}
+
+/* TWITTER */
+a#btn_twitter {
+    display: inline-block;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: auto;
+    margin-top: 105px;
+    padding: 10px 30px 0 30px;
+    background-color: #56cdf1;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a#btn_twitter:hover {
+    background: rgb(46,191,236);
+    background: -moz-linear-gradient(
+        -45deg,
+        rgba(46,191,236,1) 0%,
+        rgba(40,165,203,1) 100%
+    );
+    background: -webkit-linear-gradient(
+        -45deg,
+        rgba(46,191,236,1) 0%,
+        rgba(40,165,203,1) 100%
+    );
+    background: linear-gradient(
+        135deg,
+        rgba(46,191,236,1) 0%,
+        rgba(40,165,203,1) 100%
+    );
+}
+
+/* INDIEGOGO */
+a#btn_indiegogo {
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    margin-top: 100px;
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #eb1478;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: -2px;
+    transition: all .2s;
+}
+
+a#btn_indiegogo:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #eb1478;
+    transition: all .5s;
+}
+
+a#btn_indiegogo:hover {
+    color: #fff;
+}
+
+a#btn_indiegogo:hover:before {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+a#btn_indiegogo span {
+    position: relative;
+    z-index: 10;
+}
+
+
+/* NIKE */
+a#btn_nike {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+
+    width: 100px;
+    height: 50px;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+
+    color: #00ff55;
+    font-family: "futura-pt-condensed", sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    background-color: black;
+    border: 2px solid black;
+
+    transition: width 0.4s ease;
+}
+
+/* NIKE text */
+a#btn_nike .nike-name {
+    opacity: 1;
+    max-width: 100px;
+    overflow: hidden;
+    transition: opacity 0.2s ease, max-width 0.4s ease;
+}
+
+/* JUST DO IT text hidden initially */
+a#btn_nike .nike-slogan {
+    opacity: 0;
+    max-width: 0;
+    overflow: hidden;
+    transition: opacity 0.2s ease, max-width 0.4s ease;
+}
+
+/* Expand button */
+a#btn_nike:hover {
+    width: 200px;
+    background-color: #00ff55;
+    color: black;
+}
+
+/* Fade out NIKE */
+a#btn_nike:hover .nike-name {
+    opacity: 0;
+    max-width: 0;
+}
+
+/* Fade in JUST DO IT */
+a#btn_nike:hover .nike-slogan {
+    opacity: 1;
+    max-width: 180px;
+    transition-delay: 0.15s;
+    font-style: italic;
+}
+
+a#btn_lyft {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    padding: 12px 35px;
+
+    background-color: #ff00bf;
+    color: white;
+    border: 2px solid #ff00bf;
+    border-radius: 8px;
+
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+
+    transition: all 0.4s ease;
+}
+
+/* HOVER */
+a#btn_lyft:hover {
+    background-color: white;
+    color: #ff00bf;
+    border: 2px solid #ff00bf;
+}
+
+/* HARLEY DAVIDSON */
+a#btn_harley {
+    display: inline-block;
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+}
+
+a#btn_harley img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: all 0.4s ease;
+}
+
+a#btn_harley:hover {
+    background-color: #fc9a18;
+    transform: scale(1.1);
+}
+
+a#btn_harley:hover img {
+    transform: scale(0.9);
+}
+
+/* IBM */
+a#btn_ibm {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 100px;
+}
+
+a#btn_ibm img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity 0.3s ease;
+}
+
+a#btn_ibm .ibm-white {
+    opacity: 0;
+}
+
+a#btn_ibm .ibm-black {
+    opacity: 1;
+}
+
+a#btn_ibm:hover .ibm-white {
+    opacity: 1;
+}
+
+a#btn_ibm:hover .ibm-black {
+    opacity: 0;
+}
+
+a#btn_tesla {
+    position: relative;
+    display: block;
+    width: 70px;
+    height: 100px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    padding: 12px 35px;
+
+    background-color: black;
+
+}
+
+a#btn_tesla img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity 0.3s ease;
+}
+
+a#btn_tesla .teslared {
+    opacity: 0;
+}
+
+a#btn_tesla .teslawhite {
+    opacity: 1;
+}
+
+a#btn_tesla:hover .teslared {
+    opacity: 1;
+}
+
+a#btn_tesla:hover .teslawhite {
+    opacity: 0;
+}
