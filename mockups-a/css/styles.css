@@ -1,0 +1,9 @@
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Removes unwanted bottom whitespace gaps */
+}
+
+.mobile {
+    max-width: 20%;
+}
